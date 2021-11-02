@@ -1,4 +1,4 @@
-<h1 align="center"> Coding Quix </h1>
+<h1 align="center"> Coding Quiz </h1>
 
 <p align="center"> Welcome, this is a simple and basic timed quiz about coding</p>
 
