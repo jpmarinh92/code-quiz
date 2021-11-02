@@ -10,20 +10,45 @@
 
 <body>
   <header class="header">
-    <p class="highScore">View Highscores</p>
+    <!-- <p class="highScore btn"  id="highScore">View Highscores</p> -->
+    <a href='#' class="highScore btn" id="highScore">View Highscores</a>
     <p class="timer">Time: 0</p>
   </header>
 
   <main class="main">
-    <h1 >Coding Quiz Challenge</h1>
+    <h1 id="h1">Coding Quiz Challenge</h1>
     <p class ="explanation" id="questionBox">Try to answer the following code-related questions within the
-      time <br> limit. Keep in mind that incorrect answers will penalizze your scortime<br> by ten
+      time <br> limit. Keep in mind that incorrect answers will penalize your scortime<br> by ten
       seconds!
     </p>
-    <ol class ="options" id="options">
+    <ul class ="options" id="options">
       <li class="option" hidden></li>
-    </ol>
-    <p class="btn" id='startBtn'>Start Quiz</p>
+    </ul>
+    <div class="confirm" id="confirm" hidden></div>
+    <!-- <p class="btn" id='startBtn'>Start Quiz</p> -->
+    <a href='#' class="btn" id='startBtn'>Start Quiz</a>
+    
+    
+    <div class="end" id="end" hidden>
+      <h3> ALL DONE!</h3>
+      <p id="finalScoreP"></p>
+      <form id="user">
+        <label for="initials">Enter Initials:</label>
+        <input type='text' id='initials' name='initials'>
+        <!-- <input type='button' class="btn" id='submit' value="submit"> -->
+        <a href='#' class="highScore btn" id='submit'>Submit</a>
+      </form>
+    </div>
+    
+    
+    <div class="high-scores" id="high-scores" hidden>
+      <h3>Highscores</h3>
+      <ul class="past-scores" id="past-scores"></ul>
+      <div class="highscore-btns">
+        <a href='#' class="highScore btn" id="goBack">Go Back</a>
+        <a href='#' class="highScore btn" id="delete">Clear Highscores</a>
+      </div>
+    </div>
   </main>
   
   <script src="./assets/js/script.js"></script>
